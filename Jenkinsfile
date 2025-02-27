@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git 'https://github.com/IsNotRicardo/sep1-timecal-demo.git'
+        git branch: 'main',
+            url: 'https://github.com/IsNotRicardo/sep1-timecal-demo.git'
       }
     }
     stage('Build') {
